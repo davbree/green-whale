@@ -13,7 +13,7 @@ export default class SectionReviews extends React.Component {
                 <h2 className="block-title">{_.get(section, 'title', null)}</h2>
                 )}
                 {_.get(section, 'subtitle', null) && (
-                <p className="block-subtitle">Review subtitle prefix: 
+                <p className="block-subtitle">Review subtitle prefix:<br/>
                   {htmlToReact(_.get(section, 'subtitle', null))}
                 </p>
                 )}
