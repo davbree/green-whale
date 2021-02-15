@@ -25,7 +25,7 @@ export default class Page extends React.Component {
                   <header className="post-header">
                     <h1 className="post-title">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
                     {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                    <div className="post-subtitle">
+                    <div className="post-subtitle">...
                       {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}
                     </div>
                     )}
